@@ -20,7 +20,7 @@ const Body = () => {
     return (
         <div className="body">
             <div className="filter"> 
-                <button className ="filter-btn" 
+                <button className ="px-4 py-2 bg-gray-50" 
                     onClick ={() => {
                         const filteredList = listofRestaurants.filter(
                             (res) => res.info.rating.aggregate_rating>=4
@@ -31,7 +31,7 @@ const Body = () => {
                     Top Rated Restaurants
                     </button>
                     </div>
-            <div className="res-container">
+            <div className="flex flex-wrap">
                {
                 listofRestaurants.map((restaurant) => (
                     <RestaurantCard 
