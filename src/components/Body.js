@@ -11,11 +11,11 @@ const Body = () => {
         fetchData();
     }, []);
     const fetchData = async () => {
-            const data = await fetch("https://api.sampleapis.com/coffee/hot");
+            const data = await fetch("https://corsproxy.io/?url=https://www.zomato.com/webroutes/search/home");
         
-            const json = await data.json();
-            console.log(json);
-            setListOfRestaurants(json);
+            const json1 = await data.json();
+            console.log(json1);
+
         };
     return (
         <div className="body">
